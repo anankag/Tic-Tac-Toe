@@ -10,6 +10,7 @@ export default function Board() {
 
   function refresh ()  {
     setSquares(Array(9).fill(null));
+    setXIsNext(true)
   }
 
   function handleClick(i) {
@@ -25,8 +26,7 @@ export default function Board() {
   let status;
   winner
     ? (status = "Winner: " + winner)
-    : (status = "Next player: " + (xIsNext ? "X" : "O"));
-
+    : (status = "Next player: " + ( xIsNext ? "X" : "O"));
   return (
     <>
       <p>{status}</p>
