@@ -1,0 +1,13 @@
+.square {
+    height: 33px;
+    width: 33px;
+    border: black solid 0.1px;
+    background: none;
+    position: relative;
+}
+.value {
+    position: absolute; 
+    left: 0;
+    right: 0;
+    top: -5px;
+}
