@@ -9,8 +9,10 @@ export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
 
   function refresh ()  {
-    setSquares(Array(9).fill(null));
-    setXIsNext(true)
+    // setSquares(Array(9).fill(null));
+    // setXIsNext(true)
+    window.location.reload(true)
+
   }
 
   function handleClick(i) {
